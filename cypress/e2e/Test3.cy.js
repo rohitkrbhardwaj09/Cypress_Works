@@ -3,7 +3,7 @@ describe("Cypress little advance", () => {
     let myData;
     //Setting up Hooks
     //Data Driven Testing with fixtures
-    //Building custom Cypress commands
+    //Builing custom Cypress commands
     //Parameterize test with Multiple dataset
     //Understand the test Debugging
     //Build page object Design pattern for object
@@ -11,7 +11,7 @@ describe("Cypress little advance", () => {
     //Screenshot and Video recording for Test
     //Exploring Cypress dashboard
     //Understand the Enviromental variables of Cypress
-    //Generate Excellent reports for Test Execution results
+    //Generate Excellent repnpxorts for Test Execution results
     //Integrate Cypress tests with jenkin CI
     // -----------------------------------------------------------------------------------------------
     // Setting up Hooks
@@ -41,7 +41,7 @@ describe("Cypress little advance", () => {
 
 
         cy.get("div[class='form-group'] input[name='name']").type(myData.name)
-        cy.get("#exampleFormControlSelect1").select('Male').type(myData.gender)
+        cy.et("#exampleFormControlSelect1").select('Male').type(myData.gender)
 
         //Verify the TWO-Way Data-binding
         // cy.get("input[class='ng-pristine ng-valid ng-touched']").should('not.have.text', myData.name) 
@@ -60,7 +60,6 @@ describe("Cypress little advance", () => {
         //Parameterize test with Multiple dataset
         myData.productName.forEach(function (element) {
             cy.selectProduct(element)
-            c
         });
     })
 })
